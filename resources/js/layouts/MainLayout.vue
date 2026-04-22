@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="border:5px solid red;">
     <Header />
 
     <main>
@@ -11,6 +11,6 @@
 </template>
 
 <script setup>
-import Header from './Header.vue';
-import Footer from './Footer.vue';
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
 </script>
