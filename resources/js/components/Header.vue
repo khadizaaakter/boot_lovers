@@ -3,9 +3,9 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- Logo -->
-      <div class="text-xl font-semibold">
-        <span class="text-black">Boots</span>
-        <span class="text-orange-500"> Lover</span>
+      <div class="text-2xl font-semibold">
+        <span class="text-black">Boot</span>
+        <span class="text-orange-500"> Lovers</span>
       </div>
 
       <!-- Menu -->
@@ -20,14 +20,12 @@
 
       <!-- Right Icons -->
       <div class="flex items-center gap-5 text-gray-700">
-        <button class="hover:text-black transition">🔍</button>
-        <button class="hover:text-black transition">👤</button>
-        <button class="hover:text-black transition">🛍️</button>
+
       </div>
 
     </div>
   </header>
-</template>
+</template> 
 
 <style scoped>
 
