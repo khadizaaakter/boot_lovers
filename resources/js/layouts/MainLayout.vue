@@ -1,5 +1,5 @@
 <template>
-  <div style="border:5px solid red;">
+  <div >
     <Header />
 
     <main>
