@@ -3,10 +3,8 @@
     <div class="max-w-7xl mx-auto px-6 py-20">
 
       <!-- Heading -->
-      <div class="text-center mb-16 reveal">
-        <h2 class="section-title">
-          <span class="shimmer-text">Shop by Category</span>
-        </h2>
+      <div class="text-center mb-16">
+        <h2 class="section-title">Shop by Category</h2>
         <p class="section-sub">Curated collections, crafted for every occasion.</p>
       </div>
 
@@ -16,13 +14,9 @@
           v-for="(c, i) in cats"
           :key="i"
           :class="['bento-card', c.span]"
-          :style="{ animationDelay: `${i * 90}ms` }"
         >
           <!-- Background image -->
           <div class="bg-image" :style="{ backgroundImage: `url(${c.image})` }"></div>
-
-          <!-- Animated border beam -->
-          <div class="border-beam"></div>
 
           <!-- Gradient overlay -->
           <div class="overlay"></div>
@@ -105,31 +99,11 @@ const cats = [
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: #1a1a1a;
 }
 .section-sub {
   color: #777;
   margin-top: 10px;
-}
-
-/* Magic UI: AnimatedShinyText */
-.shimmer-text {
-  background: linear-gradient(
-    110deg,
-    #1a1a1a 0%,
-    #1a1a1a 40%,
-    #d4af37 50%,
-    #1a1a1a 60%,
-    #1a1a1a 100%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: shimmer 4s linear infinite;
-}
-@keyframes shimmer {
-  0%   { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
 }
 
 /* ---------- Bento layout (4 cols x 4 rows) ---------- */
@@ -162,22 +136,9 @@ const cats = [
   cursor: pointer;
   background: transparent;
   isolation: isolate;
-  opacity: 0;
-  transform: translateY(24px) scale(0.97);
-  filter: blur(8px);
-  animation: blurFade 0.9s cubic-bezier(.2,.8,.2,1) forwards;
   transition: transform 0.5s cubic-bezier(.2,.8,.2,1);
 }
 .bento-card:hover { transform: translateY(-4px); }
-
-/* Magic UI: BlurFade entrance */
-@keyframes blurFade {
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: blur(0);
-  }
-}
 
 /* Background image */
 .bg-image {
@@ -201,50 +162,6 @@ const cats = [
     linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%);
   z-index: 2;
   transition: opacity 0.4s ease;
-}
-
-/* ---------- Magic UI: BorderBeam ---------- */
-.border-beam {
-  position: absolute;
-  inset: 0;
-  border-radius: 22px;
-  padding: 2.5px;
-  background: conic-gradient(
-    from var(--angle, 0deg),
-    transparent 0%,
-    transparent 55%,
-    #d4af37 70%,
-    #fff7c2 80%,
-    #ffffff 85%,
-    #fff7c2 90%,
-    #d4af37 100%
-  );
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-          mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
-  opacity: 0.65;
-  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.6));
-  transition: opacity 0.4s ease, filter 0.4s ease;
-  z-index: 5;
-  pointer-events: none;
-  animation: spinAngle 5s linear infinite;
-}
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-@keyframes spinAngle {
-  to { --angle: 360deg; }
-}
-.bento-card:hover .border-beam {
-  opacity: 1;
-  filter: drop-shadow(0 0 10px rgba(255, 215, 100, 0.9));
 }
 
 /* ---------- Content ---------- */
@@ -296,12 +213,5 @@ const cats = [
 .bento-card:hover .cta {
   opacity: 1;
   transform: translateX(0);
-}
-
-/* Reveal heading */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: blurFade 0.8s ease forwards;
 }
 </style>
