@@ -4,7 +4,7 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
         <div>
           <p class="brand font-display">
-            <span>Boots</span><span class="brand-accent"> Lover</span>
+            <span>Boot</span><span class="brand-accent"> Lovers</span>
           </p>
           <p class="brand-desc">
             Premium boots, sneakers, formal and sports shoes — delivered anywhere in Bangladesh.
@@ -107,5 +107,8 @@
   border-top: 1px solid rgba(0,0,0,0.06);
   color: #8a8478;
   font-size: 0.88rem;
+}
+.py-14{
+  padding-bottom: 1.5rem;
 }
 </style>

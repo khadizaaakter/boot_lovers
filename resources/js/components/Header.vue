@@ -3,8 +3,8 @@
     <div class="max-w-7xl mx-auto px-6 py-5 grid grid-cols-3 items-center">
       <!-- Logo -->
       <router-link to="/" class="logo font-display text-2xl md:text-3xl font-bold tracking-tight">
-        <span class="logo-text">Boots</span>
-        <span class="logo-text logo-lovers">&nbsp;Lover</span>
+        <span class="logo-text">Boot</span>
+        <span class="logo-text logo-lovers">&nbsp;Lovers</span>
       </router-link>
 
       <!-- Menu -->
@@ -88,7 +88,9 @@
 .nav-link:hover { color: #111; }
 .nav-link:hover::after { width: 100%; }
 .nav-link.router-link-active { color: #111; }
-.nav-link.router-link-active::after { width: 100%; }
+/* .nav-link.router-link-active::after { width: 100%; } */
+.nav-link:hover::after { width: 100%; }
+
 
 /* Icon buttons */
 .icon-btn {
