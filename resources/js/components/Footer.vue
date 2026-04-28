@@ -7,7 +7,8 @@
             <span>Boot</span><span class="brand-accent"> Lovers</span>
           </p>
           <p class="brand-desc">
-            Premium boots, sneakers, formal and sports shoes — delivered anywhere in Bangladesh.
+            Premium boots, sneakers, formal and sports shoes — delivered anywhere in
+            Bangladesh.
           </p>
         </div>
 
@@ -18,6 +19,9 @@
             <li><a href="#">Sneakers</a></li>
             <li><a href="#">Formal</a></li>
             <li><a href="#">Sports</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Belts</a></li>
+            <li><a href="#">Premium Bags</a></li>
           </ul>
         </div>
 
@@ -40,9 +44,7 @@
         </div>
       </div>
 
-      <div class="copy">
-        © 2026 Boots Lover. All rights reserved.
-      </div>
+      <div class="copy">© 2026 Boots Lover. All rights reserved.</div>
     </div>
   </footer>
 </template>
@@ -51,7 +53,7 @@
 .site-footer {
   background: #efe6d8;
   color: #1a1a1a;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .brand {
@@ -60,7 +62,9 @@
   letter-spacing: -0.01em;
   margin-bottom: 12px;
 }
-.brand-accent { color: #f59222; }
+.brand-accent {
+  color: #f59222;
+}
 
 .brand-desc {
   color: #6f6a5e;
@@ -76,7 +80,11 @@
   color: #1a1a1a;
 }
 
-.col-links { display: flex; flex-direction: column; gap: 10px; }
+.col-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .col-links a {
   color: #6f6a5e;
   font-size: 0.92rem;
@@ -85,30 +93,32 @@
   transition: color 0.3s ease, padding-left 0.3s ease;
 }
 .col-links a::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
   width: 0;
   height: 1px;
   background: #f59222;
-  transition: width 0.35s cubic-bezier(.2,.8,.2,1);
+  transition: width 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .col-links a:hover {
   color: #f59222;
   padding-left: 14px;
 }
-.col-links a:hover::before { width: 10px; }
+.col-links a:hover::before {
+  width: 10px;
+}
 
 .copy {
   text-align: center;
   margin-top: 50px;
   padding-top: 22px;
-  border-top: 1px solid rgba(0,0,0,0.06);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
   color: #8a8478;
   font-size: 0.88rem;
 }
-.py-14{
+.py-14 {
   padding-bottom: 1.5rem;
 }
 </style>
