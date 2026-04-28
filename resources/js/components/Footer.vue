@@ -51,8 +51,8 @@
 
 <style scoped>
 .site-footer {
-  background: #efe6d8;
-  color: #1a1a1a;
+  background: #000000;
+  color: #fff9f9;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -67,7 +67,7 @@
 }
 
 .brand-desc {
-  color: #6f6a5e;
+  color: #cac9c9;
   font-size: 0.92rem;
   line-height: 1.6;
   max-width: 280px;
@@ -77,7 +77,7 @@
   font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 14px;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .col-links {
@@ -86,7 +86,7 @@
   gap: 10px;
 }
 .col-links a {
-  color: #6f6a5e;
+  color: #cac9c9;
   font-size: 0.92rem;
   text-decoration: none;
   position: relative;
@@ -114,8 +114,8 @@
   text-align: center;
   margin-top: 50px;
   padding-top: 22px;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  color: #8a8478;
+  border-top: 1px solid #f59222;
+  color: #fffefe;
   font-size: 0.88rem;
 }
 .py-14 {

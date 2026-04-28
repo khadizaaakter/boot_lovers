@@ -13,11 +13,11 @@
         </h2>
         <p class="section-sub">Fresh drops, just landed</p>
       </div>
-      
+
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
         <a v-for="p in products" :key="p.name" href="#" class="prod-card">
           <div class="prod-image" :style="{ backgroundImage: `url(${p.image})` }">
-            <span v-if="p.discount" class="prod-badge">-{{ p.discount }}%</span>
+            <!-- <span v-if="p.discount" class="prod-badge">-{{ p.discount }}%</span> -->
             <button class="quick-add" aria-label="Quick add">
               <svg
                 width="18"
@@ -255,7 +255,7 @@ const products = [
   background: rgba(0, 0, 0, 0.04);
 }
 
-.prod-badge {
+/* .prod-badge {
   position: absolute;
   top: 12px;
   left: 12px;
@@ -267,7 +267,7 @@ const products = [
   border-radius: 999px;
   z-index: 2;
   letter-spacing: 0.04em;
-}
+} */
 
 .quick-add {
   position: absolute;

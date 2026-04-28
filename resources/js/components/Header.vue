@@ -14,7 +14,7 @@
       <nav
         class="hidden md:flex items-center justify-center gap-9 text-ink-soft font-medium text-[15px]"
       >
-        <router-link to="/" class="nav-link">All</router-link>
+        <!-- <router-link to="/" class="nav-link">All</router-link> -->
         <router-link to="#" class="nav-link">Boots</router-link>
         <router-link to="#" class="nav-link">Sneakers</router-link>
         <router-link to="#" class="nav-link">Formal</router-link>
