@@ -19,7 +19,7 @@
         <router-link to="#" class="nav-link">Sneakers</router-link>
         <router-link to="#" class="nav-link">Formal</router-link>
         <router-link to="#" class="nav-link">Sports</router-link>
-        <router-link to="#" class="nav-link">Kids</router-link>
+        <!-- <router-link to="#" class="nav-link">Kids</router-link> -->
         <router-link to="#" class="nav-link">Belts</router-link>
         <router-link to="#" class="nav-link">Premium Bags</router-link>
       </nav>

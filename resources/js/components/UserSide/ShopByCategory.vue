@@ -2,6 +2,13 @@
   <section class="categories">
     <div class="py-20">
       <div class="text-center mb-14 px-6">
+        <p
+          class="flex items-center justify-center gap-4 text-[#f59222] tracking-[0.3em] uppercase text-sm"
+        >
+          <span class="w-10 h-[1px] bg-[#f59222]"></span>
+          Collections
+          <span class="w-10 h-[1px] bg-[#f59222]"></span>
+        </p>
         <h2 class="section-title">Shop by Category</h2>
         <p class="section-sub">Curated collections, crafted for every occasion.</p>
       </div>
@@ -168,6 +175,15 @@ const loop = computed(() => [...cats, ...cats]);
 .marquee-label span {
   font-size: 0.82rem;
   opacity: 0.92;
+}
+
+.collection-desc {
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: #f59222;
+  margin-bottom: 6px;
 }
 
 @media (max-width: 600px) {

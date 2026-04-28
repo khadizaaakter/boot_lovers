@@ -55,7 +55,7 @@ const products = [
     price: 4299,
     was: 5499,
     discount: 22,
-    span: "big",
+    span: "wide",
     image:
       "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=900&q=80",
   },
@@ -65,7 +65,7 @@ const products = [
     price: 3299,
     was: 3999,
     discount: 18,
-    span: "tall",
+    span: "small",
     image:
       "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=900&q=80",
   },
@@ -75,7 +75,7 @@ const products = [
     price: 3499,
     was: 4299,
     discount: 19,
-    span: "tall",
+    span: "small",
     image:
       "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=900&q=80",
   },
@@ -85,7 +85,7 @@ const products = [
     price: 2799,
     was: 3499,
     discount: 20,
-    span: "wide",
+    span: "small",
     image:
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
   },
@@ -95,9 +95,19 @@ const products = [
     price: 3699,
     was: 4499,
     discount: 18,
-    span: "wide",
+    span: "small",
     image:
       "https://images.unsplash.com/photo-1582897085656-c636d006a246?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    name: "Trailblazer Hiker",
+    cat: "MEN · OUTDOOR",
+    price: 3899,
+    was: 4799,
+    discount: 19,
+    span: "wide",
+    image:
+      "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=900&q=80",
   },
 ];
 </script>
